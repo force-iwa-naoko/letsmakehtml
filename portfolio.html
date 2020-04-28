@@ -7,6 +7,7 @@
         <title>PORTFOLIO</title>
         <style type="text/css">
             body {
+                background-color:aqua;
                 margin: 0;
             }
             div.title {
@@ -17,7 +18,7 @@
                 font-size: 40px;
                 color: #f5f5f5;
                 font-style: oblique;
-                font-family: "Castellar",Verdana, Geneva, Tahoma, sans-serif;
+                font-family: "Castellar",Verdana, Geneva, Tahoma, sans-serif ;
                 display: flex;
                 justify-content: center;
             }
@@ -25,10 +26,8 @@
                 background-image: url("img/light.jpg");
                 background-repeat: no-repeat;
                 background-size: cover;
-                background-position: 50% 50%;
-                height: 350px;
-                width: 100%;
-                /* object-fit: contain; */
+                height: 500px;
+                width:100%;
             }
             div.menu {
                 background-color: #dbefe5;
@@ -41,83 +40,54 @@
                 justify-content: center;
                 word-spacing: 20px;
             }
-            /* div.parallax {
-                background-color: #dbefe5;
-            } */
-            div.parallax h1 {
-                position: absolute;
-                left: 5%;
-                font-size: 30px;
+            h1 {
+                margin: 75px 0px 50px 100px;
+                font-size: 35px;
                 font-family: "Castellar",Verdana, Geneva, Tahoma, sans-serif;
+            }
+            img {
+                position: relative;
+                border-radius: 50%;
+                height: 250px;
+                width: 250px;
+                left: 260px;
+                object-fit: cover;
+                float: left;
             }
             p {
                 font-family: "HGP教科書体",Verdana, Geneva, Tahoma, sans-serif;
+                right: 250px;
             }
             p.name {
                 font-size: 25px;
-                position: absolute;
-                top: 90%;
-                left:60%;
-                right: 10%;
+                position: relative;
+                left: 390px;
+                letter-spacing: 5px;
             }
             p.name span {
                 font-size: 20px;
             }
-            p.p1 {
+            p.p1, p.p2, p.p3 {
                 font-size: 18px;
-                position: absolute;
-                top: 98%;
-                left:60%;
-                right: 10%;
+                position: relative;
+                left:390px;
             }
-            p.p2 {
+            p.p4, p.p5, p.p6 {
+                font-size: 16px;
+                position: relative;
+                left:390px;
+            }
+            div.blank {
+                height: 16px;
+                left: 250px;
+            }
+            p.p7, p.p8, p.p9 {
                 font-size: 18px;
-                position: absolute;
-                top: 104%;
-                left:60%;
-                right: 10%;
+                position: relative;
+                left:250px;
             }
-            p.p3 {
-                font-size: 18px;
-                position: absolute;
-                top: 110%;
-                left:60%;
-                right: 10%;
-            }
-            p.p4 {
-                font-size: 16px;
-                position: absolute;
-                top: 118%;
-                left:60%;
-                right: 10%;
-            }
-            p.p5 {
-                font-size: 16px;
-                position: absolute;
-                top: 124%;
-                left:60%;
-                right: 10%;
-            }
-            p.p6 {
-                font-size: 16px;
-                position: absolute;
-                top: 130%;
-                left:60%;
-                right: 10%;
-            }
-            p.p7 {
-                font-size: 16px;
-                position: absolute;
-                top: 138%;
-                left:10%;
-                right: 10%;
-            }
-            p.p8 {
-                font-size: 16px;
-                position: absolute;
-                top: 144%;
-                left:10%;
-                right: 10%;
+            div.blank2 {
+                margin: 75px;
             }
         </style>
     </head>
@@ -125,20 +95,19 @@
       <div class="title">PORTFOLIO</div>
       <div class="header"></div>
       <div class="menu">PROFILE WORKS BLOG CONTACT</div>
-      <div class="parallax"><h1>PROFILE</h1></div>
-      <div class="profilepic"></div>
-      <div class="contents">
-          <p class="name">岩倉奈桜子　<span>Iwakura Naoko</span></p>
-          <p class="p1">生年月日　／1998年3月29日</p>
-          <p class="p2">血液型　／不明</p>
-          <p class="p3">MAIL　／naoko.iwakura@force-corp.co.jp</p>
-          <p class="p4">在学時に執筆した卒業論文が、ゼミ内の優秀論文に選定される。</p>
-          <p class="p5">卒業後、文系・未経験でありながらIT系企業・フォース株式会社に入社。</p>
-          <p class="p6">サポート職を通じて、スキルや社会人としての基礎を身につけたいと考えている。</p>
-          <p class="p7">何事においても計画を立て一つ一つ丁寧に取り組むこと、課題等は優先順位をつけ期日までに全うすることを心がけています。また、物事についての探究心が強く、常に新しい知識や情報を得て蓄積することが得意です。</p>
-          <p class="p8">研修中に学んだ知識の定着、ITパスポート取得のための勉強に励み、一日でも早く皆様のお役に立てるよう尽力いたします。</p>
-      </div>
-      <div class="parallax"></div>
-
+      <h1>PROFILE</h1>
+      <img src="img/profile.jpg">
+      <p class="name">岩倉奈桜子　<span>Iwakura Naoko</span></p>
+      <p class="p1">生年月日　／1998年3月29日</p>
+      <p class="p2">血液型　／不明</p>
+      <p class="p3">MAIL　／naoko.iwakura@force-corp.co.jp</p>
+      <p class="p4">在学時に執筆した卒業論文が、ゼミ内の優秀論文に選定される。</p>
+      <p class="p5">卒業後、文系・未経験でありながらIT系企業・フォース株式会社に入社。</p>
+      <p class="p6">サポート職を通じて、スキルや社会人としての基礎を身につけたいと考えている。</p>
+      <div class="blank"></div>
+      <p class="p7">何事においても計画を立て一つ一つ丁寧に取り組むこと、課題等は優先順位をつけ期日までに全うすることを心がけています。</p>
+      <p class="p8">また、物事についての探究心が強く、常に新しい知識や情報を得て蓄積することが得意です。</p>
+      <p class="p9">研修中に学んだ知識の定着、ITパスポート取得のための勉強に励み、一日でも早く皆様のお役に立てるよう尽力いたします。</p>
+      <div class="blank2"></div>
   </body>  
 </html>
