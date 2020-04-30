@@ -70,7 +70,17 @@
                 float: left;
                 display: flex;
                 position: relative;
-
+            }
+            .sa {
+                opacity: 0;
+                transition: all .7s ease;
+            }
+            .sa--up {
+                transform: translate(0, 100px);
+            }
+            .sa.show {
+                opacity: 1;
+                transform: none;
             }
             p {
                 font-family: "HGP教科書体",Verdana, Geneva, Tahoma, sans-serif;
@@ -93,7 +103,7 @@
                 position: relative;
             }
             div.blank {
-                height: 16px;
+                height: 18px;
             }
             p.p7, p.p8, p.p9 {
                 font-size: 18px;
@@ -103,35 +113,82 @@
             div.blank2 {
                 margin: 75px;
             }
+            li, p.p10 {
+                font-family: "HGP教科書体",Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 18px;
+                position: relative;
+                margin-left: 250px;
+                letter-spacing: 5px;
+            }
+            p.p11 {
+                font-family: "HGP教科書体",Verdana, Geneva, Tahoma, sans-serif;
+                font-weight: bolder;
+                font-size: 22.5px;
+                position: relative;
+                margin-left: 250px;
+            }
+            p.p12, p.p13, p.p14, p.p15 {
+                font-family: "HGP教科書体",Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 18px;
+                position: relative;
+                margin-left: 250px;
+            }
         </style>
     </head>
   <body>
-      <div class="title">PORTFOLIO</div>
+      <div class="title" id="goToTop">PORTFOLIO</div>
       <div class="header"></div>
       <div class="menu"><a href="#scroll1"><p>PROFILE</p></a> <a href="#scroll2"><p>WORKS</p></a> <a href="#scroll3"><p>BLOG</p></a> <a href="#scroll4"><p>CONTACT</p></a></div>
-      <h1 id="scroll1">PROFILE</h1>
-      <div class="profilepic"></div>
+      <h1 class="sa sa--up" id="scroll1">PROFILE</h1>
+      <div class="profilepic sa sa--up"></div>
       <div class="profile">
-          <p class="name">岩倉奈桜子　<span>Iwakura Naoko</span></p>
-          <p class="p1">生年月日　／1998年3月29日</p>
-          <p class="p2">血液型　／不明</p>
-          <p class="p3">MAIL　／naoko.iwakura@force-corp.co.jp</p>
-          <p class="p4">在学時に執筆した卒業論文が、ゼミ内の優秀論文に選定される。</p>
-          <p class="p5">卒業後、文系・未経験でありながらIT系企業・フォース株式会社に入社。</p>
-          <p class="p6">サポート職を通じて、スキルや社会人としての基礎を身につけたいと考えている。</p>
-        </div>
-        <div class="blank"></div>
-        <p class="p7">何事においても計画を立て一つ一つ丁寧に取り組むこと、課題等は優先順位をつけ期日までに全うすることを心がけています。</p>
-        <p class="p8">また、物事についての探究心が強く、常に新しい知識や情報を得て蓄積することが得意です。</p>
-        <p class="p9">研修中に学んだ知識の定着、ITパスポート取得のための勉強に励み、一日でも早く皆様のお役に立てるよう尽力いたします。</p>
-        <div class="blank2"></div>
+            <p class="name sa sa--up">岩倉奈桜子　<span>Iwakura Naoko</span></p>
+            <p class="p1 sa sa--up">生年月日　／1998年3月29日</p>
+            <p class="p2 sa sa--up">血液型　／不明</p>
+            <p class="p3 sa sa--up">MAIL　／naoko.iwakura@force-corp.co.jp</p>
+            <p class="p4 sa sa--up">在学時に執筆した卒業論文が、ゼミ内の優秀論文に選定される。</p>
+            <p class="p5 sa sa--up">卒業後、文系・未経験でありながらIT系企業・フォース株式会社に入社。</p>
+            <p class="p6 sa sa--up">サポート職を通じて、スキルや社会人としての基礎を身につけたいと考えている。</p>
+      </div>
+      <div class="blank"></div>
+      <p class="p7 sa sa--up">何事においても計画を立て一つ一つ丁寧に取り組むこと、課題等は優先順位をつけ期日までに全うすることを心がけています。</p>
+      <p class="p8 sa sa--up">また、物事についての探究心が強く、常に新しい知識や情報を得て蓄積することが得意です。</p>
+      <p class="p9 sa sa--up">研修中に学んだ知識の定着、ITパスポート取得のための勉強に励み、一日でも早く皆様のお役に立てるよう尽力いたします。</p>
+      <div class="blank2"></div>
+      <h1 class="sa sa--up" id="scroll2">WORKS</h1>
+      <ul class="sa sa--up">
+          <li><a href="#goToTop">PORTFOLIO</a>……This website</li>
+      </ul>
+      <div class="blank2"></div>
+      <h1 class="sa sa--up" id="scroll3">BLOG</h1>
+      <p class="p10 sa sa--up">Coming soon!!</p>
+      <div class="blank2"></div>
+      <h1 class="sa sa--up" id="scroll4">CONTACT</h1>
+      <p class="p11 sa sa--up">フォース株式会社</p>
+      <p class="p12 sa sa--up">東京都千代田区神田錦町三丁目18番地　寿ビル7階（データウェアネットワーク株式会社　社内）</p>
+      <p class="p13 sa sa--up">東西線/竹橋駅（3b出口[KKRホテル側]より徒歩3分）</p>
+      <p class="p14 sa sa--up">半蔵門線・新宿線・三田線/神保町駅（A9出口から、徒歩5分）</p>
+      <p class="p15 sa sa--up">TEL:03-5259-5231【総合係】</p>
+      <div class="blank2"></div>
       
       <script>
           'use strict';
 
+        var scrollElement = document.querySelectorAll('.sa');
+        var scrollFunction = function() {
+            for(var i = 0; i < scrollElement.length; i++) {
+                var startPosition = 11;
+                if (window.innerHeight > scrollElement[i].getBoundingClientRect().top + startPosition) {
+                    scrollElement[i].classList.add('show');
+                }
+            }
+        }
+        window.addEventListener('load',scrollFunction);
+        window.addEventListener('scroll',scrollFunction);
+
         $(function(){
             $('a[href^="#"]').click(function(){
-                var speed = 700;
+                var speed = 1000;
                 var href= $(this).attr("href");
                 var target = $(href == "#" || href == "" ? 'html' : href);
                 var position = target.offset().top;
